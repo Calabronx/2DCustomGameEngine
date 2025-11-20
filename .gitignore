@@ -1,0 +1,87 @@
+# ==========================
+# Visual Studio
+# ==========================
+
+## Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+ipch/
+*.VC.db
+*.VC.opendb
+
+# Auto-generated project files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Temporary / cache files
+*.log
+*.tlog
+*.lastbuildstate
+*.cache
+*.pdb
+*.mdb
+*.ilk
+
+# Visual Studio Test
+TestResults/
+
+# CMake (if you use it later)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.cmake
+build/
+
+# ==========================
+# SDL / OpenGL / External libs
+# ==========================
+# Avoid committing compiled binaries from external libraries
+external/**/lib/
+external/**/bin/
+
+# ==========================
+# Your project-specific folders
+# ==========================
+/App/bin/
+/App/obj/
+/Core/bin/
+/Core/obj/
+/OpenGL/bin/
+/OpenGL/obj/
+
+# ==========================
+# OS generated files
+# ==========================
+Thumbs.db
+ehthumbs.db
+.DS_Store
+desktop.ini
+
+# ==========================
+# Executables
+# ==========================
+*.exe
+*.dll
+*.lib
+*.so
+*.dylib
+
+# ==========================
+# IDE metadata
+# ==========================
+.vs/
+.vscode/
+
+# ==========================
+# Other junk
+# ==========================
+*.tmp
+*.swp
+*.bak
+*.old
