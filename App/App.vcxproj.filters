@@ -21,14 +21,24 @@
     <ClCompile Include="src\app_layer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\balls_app_layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\app_layer.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\balls_app_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\shaders\triangle.vs" />
     <None Include="src\shaders\triangle.fs" />
+    <None Include="shaders\texture.vs" />
+    <None Include="shaders\texture.fs" />
+    <None Include="shaders\sprite.vs" />
+    <None Include="shaders\sprite.fs" />
   </ItemGroup>
 </Project>

@@ -155,6 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\balls_app_layer.cpp" />
     <ClCompile Include="src\app_layer.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
@@ -164,9 +165,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\balls_app_layer.h" />
     <ClInclude Include="src\app_layer.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="shaders\sprite.fs" />
+    <None Include="shaders\sprite.vs" />
+    <None Include="shaders\texture.fs" />
+    <None Include="shaders\texture.vs" />
     <None Include="src\shaders\triangle.fs" />
     <None Include="src\shaders\triangle.vs" />
   </ItemGroup>

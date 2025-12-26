@@ -85,3 +85,4 @@ desktop.ini
 *.swp
 *.bak
 *.old
+/OpenGL/include/KHR/khrplatform.h

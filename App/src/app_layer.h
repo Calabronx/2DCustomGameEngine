@@ -4,7 +4,6 @@
 
 #include <SDL.h>
 #include <vector>
-#include <texture.h>
 
 #include "core/layer.h"
 
@@ -17,7 +16,7 @@ class AppLayer : public Engine::Layer
 		virtual void OnUpdate(float ts) override;
 		virtual void OnRender() override;
 	private:
-		std::vector<Texture>        m_textures;
+		//std::vector<Texture>        m_textures;
 
 		uint32_t m_Shader = 0;
 		uint32_t m_VertexArray = 0;

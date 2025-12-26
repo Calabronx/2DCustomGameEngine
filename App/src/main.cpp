@@ -2,6 +2,7 @@
 
 #include "core/application.h"
 #include "app_layer.h"
+#include "balls_app_layer.h"
 
 int main(int argc,  char* argv[])
 {
@@ -11,7 +12,8 @@ int main(int argc,  char* argv[])
     appSpec.WindowSpec.Height = 600;
 
     Engine::Application application(appSpec);
-    application.PushLayer<AppLayer>();
+    // application.PushLayer<AppLayer>();
+    application.PushLayer<BallsAppLayer>();
     application.Run();
 
 
