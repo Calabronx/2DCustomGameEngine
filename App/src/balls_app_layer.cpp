@@ -28,7 +28,7 @@
 
 BallsAppLayer::BallsAppLayer()
 {   
-    m_Texture = Renderer::LoadTexture("textures/happytom.png");
+    m_BackgroundTexture = Renderer::LoadTexture("textures/grid.png");
 
     // m_Shader = Renderer::CreateShader("shaders/sprite.vs", "shaders/sprite.fs");
     m_SpriteRenderer = std::make_shared<Renderer::SpriteRenderer>();
@@ -41,6 +41,7 @@ BallsAppLayer::BallsAppLayer()
     glUniformMatrix4fv(glGetUniformLocation(m_Shader, "projection"), 1, false, glm::value_ptr(projection));
 
     glGetError();
+
 }
 
 BallsAppLayer::~BallsAppLayer()
@@ -76,12 +77,12 @@ void BallsAppLayer::OnUpdate(float ts)
 
 void BallsAppLayer::OnRender()
 {
-    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
     glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
 
-    m_SpriteRenderer->RenderSprite(m_Texture, glm::vec2(200.0f, 200.0f), glm::vec2(300.0f, 400.0f), 0.0f, glm::vec3(0.0f, 1.0f, 0.0f));
-    
     glm::vec2 framebufferSize = Engine::Application::GetInstance().GetFramebufferSize();
+    m_SpriteRenderer->RenderSprite(m_BackgroundTexture, glm::vec2(0.0f, 0.0f), glm::vec2(framebufferSize.x, framebufferSize.y), 0.0f);
+    m_Board.Render(*m_SpriteRenderer);
     glViewport(0, 0, framebufferSize.x, framebufferSize.y);
     glGetError();
 }

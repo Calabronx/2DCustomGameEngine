@@ -24,12 +24,18 @@
     <ClCompile Include="src\balls_app_layer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\AudioVisualApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\app_layer.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="src\balls_app_layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AudioVisualApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -40,5 +46,7 @@
     <None Include="shaders\texture.fs" />
     <None Include="shaders\sprite.vs" />
     <None Include="shaders\sprite.fs" />
+    <None Include="shaders\visual.vs" />
+    <None Include="shaders\visual.fs" />
   </ItemGroup>
 </Project>

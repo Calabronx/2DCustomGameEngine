@@ -155,6 +155,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\AudioVisualApp.cpp" />
     <ClCompile Include="src\balls_app_layer.cpp" />
     <ClCompile Include="src\app_layer.cpp" />
     <ClCompile Include="src\main.cpp" />
@@ -165,6 +166,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\AudioVisualApp.h" />
     <ClInclude Include="src\balls_app_layer.h" />
     <ClInclude Include="src\app_layer.h" />
   </ItemGroup>
@@ -173,6 +175,8 @@
     <None Include="shaders\sprite.vs" />
     <None Include="shaders\texture.fs" />
     <None Include="shaders\texture.vs" />
+    <None Include="shaders\visual.fs" />
+    <None Include="shaders\visual.vs" />
     <None Include="src\shaders\triangle.fs" />
     <None Include="src\shaders\triangle.vs" />
   </ItemGroup>
