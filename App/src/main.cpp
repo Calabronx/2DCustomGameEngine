@@ -13,9 +13,8 @@ int main(int argc,  char* argv[])
     appSpec.WindowSpec.Height = 600;
 
     Engine::Application application(appSpec);
-     //application.PushLayer<AppLayer>();
-    //application.PushLayer<BallsAppLayer>();
-    application.PushLayer<AudioVisualApp>();
+    application.PushLayer<BallsAppLayer>();
+    //application.PushLayer<AudioVisualApp>();
     application.Run();
 
 
