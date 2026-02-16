@@ -159,6 +159,7 @@
     <ClCompile Include="src\balls_app_layer.cpp" />
     <ClCompile Include="src\app_layer.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\TriangleShader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\GameMazeSurvivalProject.vcxproj">
@@ -169,12 +170,17 @@
     <ClInclude Include="src\AudioVisualApp.h" />
     <ClInclude Include="src\balls_app_layer.h" />
     <ClInclude Include="src\app_layer.h" />
+    <ClInclude Include="src\TriangleShader.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="shaders\background_random_color.fs" />
+    <None Include="shaders\background_random_color.vs" />
     <None Include="shaders\sprite.fs" />
     <None Include="shaders\sprite.vs" />
     <None Include="shaders\texture.fs" />
     <None Include="shaders\texture.vs" />
+    <None Include="shaders\triangle_shader.fs" />
+    <None Include="shaders\triangle_shader.vs" />
     <None Include="shaders\visual.fs" />
     <None Include="shaders\visual.vs" />
     <None Include="src\shaders\triangle.fs" />

@@ -86,3 +86,13 @@ desktop.ini
 *.bak
 *.old
 /OpenGL/include/KHR/khrplatform.h
+/App/x64/Debug/vc143.pdb
+/App/x64/Debug/vc143.idb
+/App/x64/Debug/main.obj
+/App/x64/Debug/app_layer.obj
+/App/x64/Debug/App.tlog/link.read.1.tlog
+/App/x64/Debug/App.tlog/CL.write.1.tlog
+/App/x64/Debug/App.tlog/CL.read.1.tlog
+/App/x64/Debug/App.tlog/CL.command.1.tlog
+/App/x64/Debug/App.log
+/App/x64/Debug/App.ilk

@@ -27,6 +27,9 @@
     <ClCompile Include="src\AudioVisualApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\TriangleShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\app_layer.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\AudioVisualApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TriangleShader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -48,5 +54,9 @@
     <None Include="shaders\sprite.fs" />
     <None Include="shaders\visual.vs" />
     <None Include="shaders\visual.fs" />
+    <None Include="shaders\triangle_shader.vs" />
+    <None Include="shaders\triangle_shader.fs" />
+    <None Include="shaders\background_random_color.vs" />
+    <None Include="shaders\background_random_color.fs" />
   </ItemGroup>
 </Project>
